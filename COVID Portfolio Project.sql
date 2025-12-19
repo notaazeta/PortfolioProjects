@@ -14,7 +14,7 @@ order by 1,2
 
 
 --total cases vs total deaths
---Shows likelihood of ddying if you get covid in Nigeria
+--Shows likelihood of dying if you get covid in Nigeria
 
 select location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 from [Portfolio Project]..CovidDeaths
@@ -155,5 +155,6 @@ on dea.location = vac.location
 and dea.date = vac.date
 where dea.continent is not null
 --order by 2,3
+
 
 
